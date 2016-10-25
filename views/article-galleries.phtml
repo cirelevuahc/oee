@@ -1,0 +1,9 @@
+<div id="ec_gallery__<?= htmlentities( $article->getId() ) ?>" class="gallery">
+    <div id="ec_gallery_zoom_<?= htmlentities( $article->getId() ) ?>" class="gallery-zoom">
+        <?= $zoom_plus ?>
+        <?= $zoom_minus ?>
+    </div>
+    <div id="ec_gallery_images_<?= htmlentities( $article->getId() ) ?>" class="gallery-1">
+        <?php require('apps/article-gallery.php'); ?>
+    </div>
+</div>

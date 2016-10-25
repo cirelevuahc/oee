@@ -1,0 +1,72 @@
+@import '_partial/options'; // EDIT STYLES AND OPTIONS IN _options.scss
+
+//
+// Base style button
+//
+#{$cire-btn-namespace} {
+
+    display: inline-block;
+    height: $cire-btn-height;
+    line-height: $cire-btn-height - 2;
+    padding: 0px ($cire-btn-height * .6);
+    font-weight: $cire-btn-font-weight;
+    font-size: $cire-btn-font-size;
+    font-family: $cire-btn-font-family;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover, &:focus, &:active, &.is-active, &.active {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//
+// Action style
+//
+
+@each $cire-btn-action in $cire-btn-actions {
+    // Get name font-color background-color1 background-color2 background-color1-hover background-color2-hover border-color border-radius
+    $cire-btn-name: nth( $cire-btn-action, 1 );
+    $cire-btn-font-color: nth( $cire-btn-action, 2 );
+    $cire-btn-font-color-hover: nth( $cire-btn-action, 3 );
+    $cire-btn-background-color1: nth( $cire-btn-action, 4 );
+    $cire-btn-background-color2: nth( $cire-btn-action, 5 );
+    $cire-btn-background-color1-hover: nth( $cire-btn-action, 6 );
+    $cire-btn-background-color2-hover: nth( $cire-btn-action, 7 );
+    $cire-btn-border: nth( $cire-btn-action, 8 );
+    $cire-btn-border-radius: nth( $cire-btn-action, 9 );
+
+    #{$cire-btn-namespace}-#{$cire-btn-name} {
+
+        color:  $cire-btn-font-color;
+        background-color: $cire-btn-background-color1;
+        @include background( linear-gradient( left, $cire-btn-background-color1, $cire-btn-background-color2 ) ) ;
+
+        @if $cire-btn-border-radius != "none" {
+           @include border-radius($cire-btn-border-radius);
+        }
+
+        @if $cire-btn-border != "none" {
+            border: 1px solid $cire-btn-border;
+        }
+
+        &:hover, &:focus {
+            color:  $cire-btn-font-color-hover;
+            background-color: $cire-btn-background-color1-hover;
+            @include background( linear-gradient( left, $cire-btn-background-color1-hover, $cire-btn-background-color2-hover ) );
+
+        }
+        &:active, &.is-active, &.active {
+            @include box-shadow( inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1) );
+            background: $cire-btn-background-color1-hover;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

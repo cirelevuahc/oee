@@ -1,0 +1,9 @@
+<div class="newsletter">
+	<div class="newsletter-title"><h2>Lettre<?= plural( count( $newsletters ) ) ?> de nouvelles</h2></div>
+	<ul>
+		<?php require('apps/newsletter.php'); ?>
+	</ul>
+	<div id="newsletter-detail" class="newsletter-detail">
+		<?php require('apps/newsletter-detail.php'); ?>
+	</div>
+</div>

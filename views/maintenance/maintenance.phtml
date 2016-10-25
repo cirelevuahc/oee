@@ -1,0 +1,12 @@
+<div class="maintenance">
+    <div id="sheet-image" class="sheet-image">
+        <img src="<?= IMAGE_PATH . '/maintenance.jpg' ?>" alt="welcome"/>
+    </div>
+
+    <div class="sheet-title"><h1>Maintenance</h1></div>
+    <section>
+        <h2>Le site <?= htmlentities( $SETTINGS->findByName('long-name')->getValue() ) ?></h2>
+        <p>Est en maintenance</p>
+        <img class="maintenance-image" src="<?= IMAGE_PATH . '/logo-noir.svg' ?>" alt="logo"/>
+    </section>
+</div>

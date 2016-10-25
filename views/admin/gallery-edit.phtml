@@ -1,0 +1,33 @@
+<h1>Edition  galerie</h1>
+<form method="POST" class="edit" enctype="multipart/form-data">
+    <input type="hidden" id="id" name="id" value="<?= htmlentities( $id ) ?>">
+    <input type="hidden" id="image" name="image"  value="<?= htmlentities( $image ) ?>">
+
+    <p>
+        <label for="title">Titre</label>
+        <input type="text" id="title" name="title" placeholder="Titre*" value="<?= htmlentities( $title ) ?>">
+    </p>
+
+    <p>
+        <?php require('apps/admin/gallery-edit-articles.php'); ?>
+    </p>
+
+    <p>
+        <label for="image_upload">Image</label>
+        <input type="file" id="image_upload" name="image_upload">
+        <button id="button_image_upload" type="submit" class="button button-normal" name="action" value="upload-image">Ajouter l'image</button>
+    </p>
+    <p class="edit-image">
+        <label for="image_name"><span>Nom</span></label>
+        <input type="text" id="image_name"  placeholder="" value="<?= basename( htmlentities( $image ) ) ?>" disabled />
+        <button id="button_image_supp" type="text" class="button button-normal">Supprimer l'image</button>
+    </p>
+    <p class="edit-image">
+        <label><span>Aperçu</span></label>
+        <img id="image_previous" src="<?= htmlentities( $image ) ?>" alt="<?= basename( htmlentities( $image ) ) ?>"/>
+    </p>
+
+    <div class="edit-button">
+        <button type="submit" class="button button-normal" name="action" value="<?= $gallery_action ?>">Sauvegarder</button>
+    </div>
+</form>

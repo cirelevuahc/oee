@@ -1,0 +1,16 @@
+<tr>
+    <td>
+        <?= htmlentities( $article->getSheet()->getTitle() ) ?>
+        <div class="list-table-actions">
+            <span class="edit">
+                <a  href="article-edit_id_<?= htmlentities( $article->getId() ) ?>">Modifier</a> |
+            </span>
+            <span class="supp">
+                <button id="supp_id_<?= htmlentities( $article->getId() ) ?>" type="text" >Supprimer</button>
+            </span>
+        </div>
+    </td>
+    <td><?= htmlentities( $article->getTitle() ) ?></td>
+    <td><?= display_yes_no( htmlentities( $article->getGallery() ) ) ?></td>
+    <td><?= sql_2_date( htmlentities( $article->getDate() ) ) ?></td>
+</tr>

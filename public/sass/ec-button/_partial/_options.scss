@@ -1,0 +1,21 @@
+//
+// Base default
+//
+$cire-btn-namespace: ".button"; //prefix for all classes
+$cire-btn-height: 32px !default;
+
+//
+// Typography
+//
+$cire-btn-font-size: 14px;
+$cire-btn-font-weight: 300;
+$cire-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+
+//
+// Options
+//   1    2          3                4                 5                 6                       7                       8            9
+// ( name font-color font-color-hover background-color1 background-color2 background-color1-hover background-color2-hover border-color border-radius ) add as many as you like.
+$cire-btn-actions:
+    ('normal' $button $button_hover $button_back1 $button_back2 $button_back1_hover $button_back2_hover $button_border $button-border-radius )
+    ('flat' $button $button_hover $button_back1 $button_back1 $button_back1_hover $button_back1_hover $button_border $button-border-radius )
+    ('inactive' $button_back1 $button_back1 $button_back3 $button_back3 $button_back3 $button_back3 $button_border $button-border-radius )

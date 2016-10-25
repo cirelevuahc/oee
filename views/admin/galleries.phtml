@@ -1,0 +1,21 @@
+
+<h1>Gestion des galeries
+    <a class="button button-normal" href="gallery-edit_id_0">Nouvelle galerie</a>
+</h1>
+
+<?php require('apps/admin/list-nav.php'); ?>
+<table class="list-table">
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Image</th>
+            <th><?php require('apps/admin/galleries-articles.php'); ?></th>
+            <th>Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <?php require('apps/admin/gallery.php'); ?>
+    </tbody>
+</table>
+<?php require('apps/confirm-box.php'); ?>

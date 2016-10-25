@@ -1,0 +1,17 @@
+@import '_partial/form';
+@import '_partial/welcome';
+@import '_partial/sheet';
+@import '_partial/article';
+@import "_partial/gallery";
+@import "_partial/newsletter";
+@import "_partial/report";
+
+.content {
+    @include container;
+    min-height: 1300px;
+
+    &-hello {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+}

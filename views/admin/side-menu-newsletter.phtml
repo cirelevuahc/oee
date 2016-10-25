@@ -1,0 +1,7 @@
+<li class="menu-has-children">
+    <a class="<?= side_menu_select( array( 'newsletters', 'newsletter-edit' ), $page ); ?>" href="newsletters">Lettre de nouvelles</a>
+    <ul class="<?= side_menu_sub_menu_display( array( 'newsletters', 'newsletter-edit' ), $page ); ?>">
+        <li><a class="<?= side_menu_sub_menu_select( 'newsletters', $page ); ?>" href="newsletters">Tous les lettres</a></li>
+        <li><a class="<?= side_menu_sub_menu_select( 'newsletter-edit', $page ); ?>" href="newsletter-edit_id_0">Nouvel lettre</a></li>
+    </ul>
+</li>

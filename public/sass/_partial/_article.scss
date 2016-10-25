@@ -1,0 +1,54 @@
+.article {
+
+  &-title {
+    text-align: left;
+
+    h2 {
+      padding: 10px 20px;
+      color: $palette3;
+      display: inline-block;
+      font-weight: bold;
+    }
+  }
+
+  figure {
+
+      @include breakpoint( $media-md-lg ) {
+
+          @include cf;
+
+          img {
+              float: left;
+              width: 30%;
+          }
+
+          figcaption {
+              float: right;
+              width: 70%;
+          }
+
+      }
+
+      figcaption {
+          text-align: justify;
+          padding: 10px 20px;
+          font-size: 1.2rem;
+          line-height: 2rem;
+      }
+
+      margin: 10px;
+      text-align: center;
+  }
+
+  &_item {
+    padding-top: 15px;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $palette3;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+}

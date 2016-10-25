@@ -1,0 +1,61 @@
+// Sunset wedding 2
+//$palette1 : #5E6371; // gray
+//$palette2 : #FFD2C5; // salmon light
+//$palette3 : #FFD389; // yellow strow
+//$palette4 : #CAD1E4; // blu light
+//$palette5 : #BAAFC9; // lilac light
+
+
+// Flat UI Colors
+$palette1 : #2d2d2d; // gray
+$palette2 : #ffffff; // white
+$palette3 : #f20c5a; // magenta
+$palette4 : #f2f2f2; // light grey
+
+
+//$palette4 : #BDC3C7; // light gray
+//$palette5 : #DEFF00; // light anise
+//$palette7 : #34495E; // petrol blu 1
+//$palette6 : #2C3E50; // petrol blu 2
+
+
+// Sunset wedding
+//$palette1 : #1C1616; // dark gray
+//$palette2 : #ffffff; // white
+//
+//$palette3 : #5E6470; // gray
+//$palette4 : #CCEAC5; // light green water
+//$palette5 : #DEFF00; // light anise
+//$palette6 : #EAC5E6; // light pink
+//$palette7 : #B6ABCC; // light lilac
+
+// Global
+$text_color : $palette1;
+$text_color_hover : $palette3;
+$background_color: $palette2;
+
+// button
+$button : $palette2;
+$button_hover : $palette3;
+$button_back1 : $palette3;
+$button_back2 : lighten($palette3, 10%);
+$button_back3 : $palette2;
+$button_back1_hover : $palette2;
+$button_back2_hover : $palette2;
+$button_border : $palette3;
+
+
+// Menu
+$menu_text_color : $palette2;
+$menu_text_color_hover : $palette3;
+$menu_background_color: $palette3;
+$menu_background_color_hover: $palette2;
+$menu_border_color : $palette3;
+$menu_submenu_background_color: $palette3;
+$menu_submenu_color: $palette2;
+$menu_submenu_background_color_hover: $palette2;
+$menu_submenu_color_hover: $palette3;
+
+// footer
+$footer_color: $palette1;
+$footer_background_color: $palette2;

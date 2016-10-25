@@ -1,0 +1,11 @@
+<figure>
+    <object data="<?= htmlentities( $report->getFile() ) ?>" type="application/pdf">
+        <p>
+            Votre navigateur ne peut pas lire les fichiers PDF
+            <a href="<?= htmlentities( $report->getFile() ) ?>">cliquer ici pour télécharger le fichier PDF.</a>
+        </p>
+    </object>
+    <figcaption>
+        <?= htmlentities( $report->getTitle() ) ?>
+    </figcaption>
+</figure>

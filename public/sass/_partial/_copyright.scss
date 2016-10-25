@@ -1,0 +1,19 @@
+.footer-copyright_fluid {
+     background-color: $footer_background_color;
+}
+
+.footer-copyright {
+    font-weight: bold;
+    margin: 0px auto;
+    line-height: 30px;
+    color: $footer_color;
+    text-align: center;
+
+    span {
+        font-size: .7rem;
+        margin: 0px auto;
+        line-height: 30px;
+        display: block;
+    }
+
+}

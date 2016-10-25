@@ -1,0 +1,20 @@
+.maintenance {
+  @include container;
+
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+    color: $text-color;
+    margin: 2% 0;
+  }
+
+  p {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &-image {
+    width: 50%;
+  }
+}

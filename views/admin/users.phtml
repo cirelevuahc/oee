@@ -1,0 +1,21 @@
+
+<h1>Gestion des utilisateurs
+    <a class="button button-normal" href="user-edit_id_0">Nouvel utilisateur</a>
+</h1>
+
+<table class="list-table">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Pseudo</th>
+            <th>Rôle</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <?php require('apps/admin/user.php'); ?>
+    </tbody>
+</table>
+<?php require('apps/confirm-box.php'); ?>

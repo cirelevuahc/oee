@@ -1,0 +1,2 @@
+<?= $other[0]['label'] ?> <input type="radio" id="<?= htmlentities( $setting->getName() ) ?>" name="options[<?= $i ?>][value]" value="<?= $other[0]['value'] ?>" <?= checked( $setting->getValue(), $other[0]['value'] ) ?>>
+<?= $other[1]['label'] ?> <input type="radio" name="options[<?= $i ?>][value]" value="<?= $other[1]['value'] ?>" <?= checked( $setting->getValue(), $other[1]['value'] ) ?>>

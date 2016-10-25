@@ -1,0 +1,63 @@
+.list-table {
+    background-color: $list_table_background_color;
+    border: 1px solid $list_table_border_color;
+    width: 100%;
+    line-height: 2rem;
+
+    td, th {
+        padding: 8px 10px;
+    }
+
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                background-color: $list_table_row_color;
+            }
+
+            &:hover .list-table-actions {
+                left: 0;
+            }
+        }
+
+        color: $list_table_text_color;
+    }
+
+    img {
+        height: 60px;
+    }
+
+    &-actions {
+        position: relative;
+        left: -9999rem;
+
+        span {
+            display: inline-block;
+        }
+
+        .edit {
+            a {
+                padding: 0 5px;
+                color: $list_table_text_color;
+                &:hover {
+                    color: lighten($list_table_text_color, 10%);
+                }
+            }
+        }
+
+        .supp {
+            button {
+                padding: 0 5px;
+                border: 0px;
+                background-color: rgba(0, 0, 0, 0);
+                color: #a00;
+                @include font-thin;
+                font-size: 1rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: lighten($list_table_supp_color, 10%);
+                }
+            }
+        }
+    }
+}

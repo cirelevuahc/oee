@@ -1,0 +1,9 @@
+<div class="report">
+	<div class="report-title"><h2>Rapport<?= plural( count( $reports ) ) ?></h2></div>
+	<ul>
+		<?php require('apps/report.php'); ?>
+	</ul>
+	<div id="report-detail" class="report-detail">
+		<?php require('apps/report-detail.php'); ?>
+	</div>
+</div>

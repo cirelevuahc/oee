@@ -1,0 +1,118 @@
+.gallery{
+    position: relative;
+
+    &-zoom {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 10px;
+        display: none;
+
+        @include breakpoint( $media-md-lg ){
+            display: block;
+        }
+
+        &-button {
+            width: 30px;
+            padding: 5px;
+            margin-left: 20px;
+            border: 1px solid $palette3;
+            @include border-radius(15px);
+            background-color: $palette3;
+            fill: $palette2;
+
+            &:hover {
+                background-color: $palette2;
+                fill: $palette3;
+            }
+        }
+    }
+
+    &-1{
+        @include cf;
+        @include show-grid(12);
+        padding-top: 50px;
+
+        &_item {
+            text-align: center;
+            margin-bottom: gutter(12);
+
+            @include susy-breakpoint( $media-md, 12) {
+                @include span(6);
+
+                &:nth-child(2n) {
+                    @include last;
+                }
+
+                margin-bottom: gutter();
+            }
+
+            @include susy-breakpoint( $media-lg, 12) {
+                @include span(3);
+
+                &:nth-child(4n) {
+                    @include last;
+                }
+
+                margin-bottom: gutter();
+            }
+
+
+
+        }
+    }
+
+    &-2{
+        @include cf;
+        @include show-grid(12);
+        padding-top: 50px;
+
+        &_item {
+            text-align: center;
+            margin-bottom: gutter(12);
+
+            @include susy-breakpoint( $media-lg, 12) {
+                @include span(4);
+
+                &:nth-child(3n) {
+                    @include last;
+                }
+
+                margin-bottom: gutter();
+            }
+
+        }
+    }
+
+    &-3{
+        @include cf;
+        @include show-grid(12);
+        padding-top: 50px;
+
+        &_item {
+            text-align: center;
+            margin-bottom: gutter(12);
+
+            @include susy-breakpoint( $media-lg, 12) {
+                @include span(6);
+
+                &:nth-child(2n) {
+                    @include last;
+                }
+
+                margin-bottom: gutter();
+            }
+        }
+    }
+
+    &-4{
+        @include cf;
+        @include show-grid(12);
+        padding-top: 50px;
+
+        &_item {
+            text-align: center;
+            margin-bottom: gutter(12);
+        }
+    }
+}

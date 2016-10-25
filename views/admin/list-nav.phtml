@@ -1,0 +1,14 @@
+<div class="list-nav">
+    <span><?= $list_nav_count ?> élément<?= plural( $list_nav_count ) ?></span>
+    <span class="list-nav-links">
+        <?php
+            require('apps/admin/list-nav-first.php');
+            require('apps/admin/list-nav-prev.php');
+        ?>
+        <?php require('apps/admin/list-nav-pages.php'); ?> sur <?= $list_nav_total ?>
+        <?php
+            require('apps/admin/list-nav-next.php');
+            require('apps/admin/list-nav-last.php');
+        ?>
+    </span>
+</div>

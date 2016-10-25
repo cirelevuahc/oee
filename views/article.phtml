@@ -1,0 +1,11 @@
+<article class="article_item">
+    <div class="article-title"><h2><?= htmlentities( $article->getTitle() ) ?></h2></div>
+    <figure>
+        <img src="<?= htmlentities( $article->getImage() ) ?>" alt="<?= htmlentities( $article->getTitle() ) ?>">
+        <figcaption>
+            <?= nl2br( htmlentities( $article->getContent() ) ) ?>
+        </figcaption>
+    </figure>
+
+</article>
+<?php require('apps/article-galleries.php'); ?>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" class="" id="ec_icon_right_down_triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+     y="0px" width="1px" height="1px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+    <g id="active_hover">
+        <polygon points="128,24 232,24 180,128 128,232 76,128 24,24 128,24"/>
+    </g>
+    <g id="active">
+        <g id="a1">
+            <polygon points="48,128 48,48 128,88 208,128 128,168 48,208 48,128"/>
+        </g>
+        <g id="a2">
+            <polygon points="58.718,88 98.718,18.719 148,93.359 197.282,168 108,162.641 18.718,157.282 58.718,88"/>
+        </g>
+        <g id="a3">
+            <polygon points="88,58.719 157.281,18.719 162.641,108 168,197.282 93.359,148 18.718,98.719 88,58.719"/>
+        </g>
+        <g id="a4">
+            <polygon points="128,48 208,48 168,128 128,208 88,128 48,48 128,48"/>
+        </g>
+    </g>
+    <g id="normal_hover">
+        <polygon points="24,128 24,24 128,76 232,128 128,180 24,232 24,128"/>
+    </g>
+    <g id="normal">
+        <polygon points="48,128 48,48 128,88 208,128 128,168 48,208 48,128"/>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+<li class="<?= $menu_as_children ?>">
+     <a class="<?= menu_selected( $page, $menu['id'] ) ?>" href="<?= $menu['id'] ?>"><?= htmlentities( $menu['title'] ) ?>
+     <?php require('apps/header-menu-menus-icon.php'); ?>
+     </a>
+     <?php require('apps/header-menu-menu.php'); ?>
+</li>

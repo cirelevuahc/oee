@@ -1,0 +1,37 @@
+<nav id="side-menu" class="side-menu">
+    <ul>
+        <li>
+            <a class="<?= side_menu_select( 'home', $page ); ?>" href="home">Accueil</a>
+        </li>
+
+        <?php require('apps/admin/side-menu-user.php'); ?>
+
+        <li class="menu-has-children">
+            <a class="<?= side_menu_select( array( 'articles', 'article-edit' ), $page ); ?>" href="articles">Articles</a>
+            <ul class="<?= side_menu_sub_menu_display( array( 'articles', 'article-edit' ), $page ); ?>">
+                <li><a class="<?= side_menu_sub_menu_select( 'articles', $page ); ?>" href="articles">Tous les articles</a></li>
+                <li><a class="<?= side_menu_sub_menu_select( 'article-edit', $page ); ?>" href="article-edit_id_0">Nouvel article</a></li>
+            </ul>
+        </li>
+        <li class="menu-has-children">
+            <a class="<?= side_menu_select( array( 'sheets', 'sheet-edit' ), $page ); ?>" href="sheets">Feuilles</a>
+            <ul class="<?= side_menu_sub_menu_display( array( 'sheets', 'sheet-edit' ), $page ); ?>">
+                <li><a class="<?= side_menu_sub_menu_select( 'sheets', $page ); ?>" href="sheets">Toutes les feuilles</a></li>
+                <li><a class="<?= side_menu_sub_menu_select( 'sheet-edit', $page ); ?>" href="sheet-edit_id_0">Nouvelle feuille</a></li>
+            </ul>
+        </li>
+        <li class="menu-has-children">
+            <a class="<?= side_menu_select( array( 'galleries', 'gallery-edit' ), $page ); ?>" href="galleries">Galleries</a>
+            <ul class="<?= side_menu_sub_menu_display( array( 'galleries', 'gallery-edit' ), $page ); ?>">
+                <li><a class="<?= side_menu_sub_menu_select( 'galleries', $page ); ?>" href="galleries">Toutes les galeries</a></li>
+                <li><a class="<?= side_menu_sub_menu_select( 'gallery-edit', $page ); ?>" href="gallery-edit_id_0">Nouvelle galerie</a></li>
+            </ul>
+        </li>
+
+        <?php require('apps/admin/side-menu-newsletter.php'); ?>
+        <?php require('apps/admin/side-menu-report.php'); ?>
+        <?php require('apps/admin/side-menu-manage-menu.php'); ?>
+        <?php require('apps/admin/side-menu-setting.php'); ?>
+
+    </ul>
+</nav>

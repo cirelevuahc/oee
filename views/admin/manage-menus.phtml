@@ -1,0 +1,24 @@
+<h1>Gestion des menus</h1>
+
+<div class="manage-menu">
+    <div class="manage-menu_item">
+        <p>Feuille affichée</p>
+        <ul id="menus_displayed" class="manage-menu-displayed">
+            <?php require('apps/admin/manage-menus-displayed.php'); ?>
+        </ul>
+    </div>
+    <div class="manage-menu_item">
+        <p>Feuille cachée</p>
+        <ul id="menus_hidden">
+            <?php require('apps/admin/manage-menus-hidden.php'); ?>
+        </ul>
+    </div>
+</div>
+
+<form method="POST" class="edit" enctype="multipart/form-data">
+    <input type="hidden" id="menu_order" name="menu_order" value="">
+
+    <div class="edit-button">
+        <button type="submit" class="button button-normal" name="action" value="modify-menu-order">Sauvegarder</button>
+    </div>
+</form>

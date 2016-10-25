@@ -1,0 +1,63 @@
+body {
+  background-color: $background_color;
+  color: $text_color;
+  position: relative;
+  font-size: 1rem;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  @include font-thin;
+}
+
+a {
+  color: $text_color;
+  text-decoration: none;
+
+  &:hover{
+    color: $text_color_hover;
+  }
+}
+
+
+h1 {
+  font-size: 1.8rem;
+  color: $palette3;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+}
+
+input, textarea, select {
+  border: 1px solid lighten($palette5, 10%);
+  font-size: 1rem;
+
+  &:focus {
+    border: 1px solid $palette6;
+    @include box-shadow($palette6 2px 2px 7px);
+  }
+}
+
+.hidden {
+  display: none;
+}

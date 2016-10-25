@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="<?= CSS_PATH ?>/style.css" />
+        <script src="<?= JS_PATH ?>/jquery-2.2.3.min.js"></script>
+        <script src="<?= JS_PATH ?>/maintenance/main.js"></script>
+        <title>Maintenance <?= htmlentities( $SETTINGS->findByName('short-name')->getValue() ) ?></title>
+    </head>
+
+    <body>
+        <?php require("apps/maintenance/header.php"); ?>
+        <?php require("apps/maintenance/content.php"); ?>
+        <?php require("apps/footer.php"); ?>
+
+    </body>
+</html>

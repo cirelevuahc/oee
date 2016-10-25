@@ -1,0 +1,15 @@
+<tr>
+    <td>
+        <?= htmlentities( $newsletter->getSheet()->getTitle() ) ?>
+        <div class="list-table-actions">
+            <span class="edit">
+                <a  href="newsletter-edit_id_<?= $newsletter->getId() ?>">Modifier</a> |
+            </span>
+            <span class="supp">
+                <button id="supp_id_<?= $newsletter->getId() ?>" type="text" >Supprimer</button>
+            </span>
+        </div>
+    </td>
+    <td><?= htmlentities( $newsletter->getTitle() ) ?></td>
+    <td><?= sql_2_date( htmlentities( $newsletter->getDate() ) ) ?></td>
+</tr>

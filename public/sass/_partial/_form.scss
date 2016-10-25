@@ -1,0 +1,57 @@
+.login, .register, .contact {
+  @include container;
+
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+    color: $text-color;
+    margin: 2% 0;
+  }
+
+  a {
+    margin-top: 70px;
+  }
+
+  &-form {
+    width: 90%;
+    @include breakpoint( $media-md-lg ) {
+      width: 60%;
+    }
+
+    margin: 0 auto;
+    border: 1px solid $palette3;
+    @include border-radius(5px);
+    padding: 10px;
+    background-color: $palette2;
+    text-align: left;
+
+    input, label, button {
+      margin: 5px 0;
+    }
+
+    label {
+      display: inline-block;
+    }
+
+    input, textarea {
+      width: 100%;
+      background-color: $palette4;
+    }
+
+    textarea {
+      max-width: 100%;
+      min-height: 200px;
+    }
+
+    &-button {
+      text-align: center;
+    }
+
+  }
+
+}
+
+.login-form{
+  width: 300px;
+}

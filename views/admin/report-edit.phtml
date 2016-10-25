@@ -1,0 +1,35 @@
+<h1>Edition rapport</h1>
+<form method="POST" class="edit" enctype="multipart/form-data">
+    <input type="hidden" id="id" name="id" value="<?= htmlentities( $id ) ?>">
+    <input type="hidden" id="file" name="file"  value="<?= htmlentities( $file ) ?>">
+
+    <p>
+        <?php require('apps/admin/report-edit-sheets.php'); ?>
+    </p>
+    <p>
+        <label for="title">Titre</label>
+        <input type="text" id="title" name="title" placeholder="Titre*" value="<?= htmlentities( $title ) ?>">
+    </p>
+
+    <p>
+        <label for="file_upload">Fichier PDF</label>
+        <input type="file" id="file_upload" name="file_upload">
+        <button id="button_file_upload" type="submit" class="button button-normal" name="action" value="upload-file">Ajouter le fichier</button>
+    </p>
+    <p class="edit-file">
+        <label for="file_name"><span>Nom</span></label>
+        <input type="text" id="file_name"  placeholder="" value="<?= basename( htmlentities( $file ) ) ?>" disabled />
+        <button id="button_file_supp" type="text" class="button button-normal">Supprimer le fichier</button>
+    </p>
+    <p class="edit-file">
+        <label><span>Aperçu</span></label>
+        <object id="file_previous" data="<?= htmlentities( $file ) ?>" type="application/pdf"></object>
+    </p>
+
+
+
+
+    <div class="edit-button">
+        <button type="submit" class="button button-normal" name="action" value="<?= $report_action ?>">Sauvegarder</button>
+    </div>
+</form>

@@ -1,0 +1,17 @@
+<nav id="header-menu" class="header-menu">
+    <ul>
+        <li>
+            <a href="<?= home_page( $link ) ?>" target="_blanck">Voir le site côte utilisateur</a>
+        </li>
+        <li>
+
+            <a class="" href="logout">
+                Bonjour <?= $_SESSION['user']['pseudo'] ?>
+            </a>
+            <ul>
+                <?php require('apps/admin/header-menu-admin.php'); ?>
+                <li><a class="" href="logout">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>

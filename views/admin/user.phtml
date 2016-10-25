@@ -1,0 +1,17 @@
+<tr>
+    <td>
+        <?= htmlentities( $user->getName() ) ?>
+        <div class="list-table-actions">
+            <span class="edit">
+                <a href="user-edit_id_<?= htmlentities( $user->getId() ) ?>">Modifier</a> |
+            </span>
+            <span class="supp">
+                <button id="supp_id_<?= htmlentities( $user->getId() ) ?>" type="text" >Supprimer</button>
+            </span>
+        </div>
+    </td>
+    <td><?= htmlentities( $user->getForname() ) ?></td>
+    <td><?= htmlentities( $user->getPseudo() ) ?></td>
+    <td><?= htmlentities( $user->getRole()->getLabel() ) ?></td>
+    <td><?= $status->findByStatus( $user->getStatus() )->getLabel() ?></td>
+</tr>

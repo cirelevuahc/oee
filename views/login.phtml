@@ -1,0 +1,23 @@
+<div class="login">
+    <div id="sheet-image" class="sheet-image">
+        <img src="<?= IMAGE_PATH . '/login.jpg' ?>" alt="login"/>
+    </div>
+
+    <div class="sheet-title"><h1>Login</h1></div>
+    <section>
+        <h2>Je me connecte</h2>
+        <form class="login-form" method="POST" enctype="multipart/form-data">
+
+            <label for="login">Login : </label>
+            <input type="text" id="login" name="login" placeholder="Login*" value="<?= htmlentities( $login ) ?>">
+
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Mot de passe*">
+
+            <div class="login-form-button">
+                <button type="submit" class="button button-normal" name="action" value="login">Je me connecter</button>
+            </div>
+
+        </form>
+    </section>
+</div>

@@ -1,0 +1,34 @@
+@import 'list-nav';
+@import 'list';
+@import 'edit';
+@import 'manage-menu';
+
+.content {
+
+    &-side {
+        width: 160px;
+        height: 200%;
+        position: absolute;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    &-main {
+        padding: 40px 40px 40px 200px;
+        width: 100%;
+
+        .welcome {
+            text-align: center;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        h1 {
+            padding: 20px 0;
+        }
+    }
+
+
+}

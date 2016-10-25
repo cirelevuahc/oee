@@ -1,0 +1,61 @@
+/**
+ * admin/_colors.scss
+ */
+
+// Sunset wedding 2
+//$palette1 : #5E6371; // gray
+//$palette2 : #FFD2C5; // salmon light
+//$palette3 : #FFD389; // yellow strow
+//$palette4 : #CAD1E4; // blu light
+//$palette5 : #BAAFC9; // lilac light
+
+// Sunset wedding
+//$palette1 : #5E6470; // gray
+//$palette2 : #CCEAC5; // green water light
+//$palette3 : #DEFF00; // anise light
+//$palette4 : #EAC5E6; // pink light
+//$palette5 : #B6ABCC; // lilac light
+
+// birthday
+$palette1 : #1C1616; // dark gray
+$palette2 : #F1F1F1; // white
+$palette3 : #484D25; // dark green
+$palette4 : #B48A9E; // dark pink
+$palette5 : #ACBDCF; // light gray
+$palette6 : #F75600; // orange
+$palette7 : #846644; // brown
+
+// Global
+$text_color : #palette1;
+$text_color_hover : $palette3;
+$background_color: $palette2;
+
+// button
+$button : $palette5;
+$button_hover : $palette6;
+$button_back1 : $palette1;
+$button_back2 : lighten($palette1, 10%);
+$button_back3 : $palette2;
+$button_back1_hover : lighten($palette1, 3%);
+$button_back2_hover : lighten($palette1, 13%);
+$button_border : $palette1;
+
+// Menu
+$menu_text_color : $palette5;
+$menu_text_color_hover : $palette6;
+$menu_background_color: $palette1;
+$menu_background_color_hover: darken($palette1, 20%);
+$menu_border_color : $palette3;
+$menu_submenu_background_color: $palette2;
+
+
+// footer
+$footer_background_color: $palette1;
+$footer_color: $text_color;
+
+// List table
+$list_table_background_color : #fff;
+$list_table_border_color : #e5e5e5;
+$list_table_row_color : #f9f9f9;
+$list_table_text_color : $palette7;
+$list_table_supp_color : #a00;

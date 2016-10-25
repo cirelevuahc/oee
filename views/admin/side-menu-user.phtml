@@ -1,0 +1,7 @@
+<li class="menu-has-children">
+    <a class="<?= side_menu_select( array( 'users', 'user-edit' ), $page ); ?>" href="users">Utilisateurs</a>
+    <ul class="<?= side_menu_sub_menu_display( array( 'users', 'user-edit' ), $page ); ?>">
+        <li><a class="<?= side_menu_sub_menu_select( 'users', $page ); ?>" href="users">Tous les utilisateur</a></li>
+        <li><a class="<?= side_menu_sub_menu_select( 'user-edit', $page ); ?>" href="user-edit_id_0">Nouvel utilisateur</a></li>
+    </ul>
+</li>

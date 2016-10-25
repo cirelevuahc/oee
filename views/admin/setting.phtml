@@ -1,0 +1,6 @@
+<p>
+    <input type="hidden" id="<?= htmlentities( $setting->getName() ) ?>" name="options[<?= $i ?>][id]" value="<?= htmlentities( $setting->getId() )?>">
+    <label for="<?= htmlentities( $setting->getName() ) ?>"><?= htmlentities( $setting->getLabel() ) ?></label>
+    <?php require('apps/admin/setting-type.php'); ?>
+    <span><?= htmlentities( $setting->getDescription() ) ?></span>
+</p>

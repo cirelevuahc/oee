@@ -1,0 +1,5 @@
+<li id="menu_<?= $j ?>">
+    <img src="<?= IMAGE_PATH ?>/up.svg" id="menu_up_<?= htmlentities( $sheet->getId() ) ?>" />
+    <img src="<?= IMAGE_PATH ?>/down.svg" id="menu_down_<?= htmlentities( $sheet->getId() ) ?>" />
+    <span id="menu_displayed_<?= $sheet->getId() ?>"><?= htmlentities( $sheet->getTitle() ) ?></span>
+</li>

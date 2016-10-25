@@ -1,0 +1,11 @@
+<div class="sheet">
+    <div id="sheet-image" class="sheet-image">
+        <img src="<?= htmlentities( $sheet->getImage() ) ?>" alt="<?= htmlentities( $sheet->getTitle() ) ?>"/>
+    </div>
+
+    <div class="sheet-title"><h1><?=  htmlentities( $sheet->getTitle() ) ?></h1></div>
+</div>
+<?php require('apps/hello.php'); ?>
+<?php require('apps/articles.php'); ?>
+<?php require('apps/newsletters.php'); ?>
+<?php require('apps/reports.php'); ?>

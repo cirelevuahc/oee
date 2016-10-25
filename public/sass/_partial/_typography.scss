@@ -1,0 +1,25 @@
+
+$font-name: "Roboto";
+$font-size: "100,300,400";
+$font: $font-name + ":" + $font-size;
+
+@import "_partial/font-google";
+@include fonts-googleapis($font);
+
+@mixin font-thin() {
+    font-family: $font-name, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+@mixin font-light() {
+    font-family: $font-name, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin font-normal() {
+    font-family: $font-name, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}

@@ -1,0 +1,11 @@
+<div class="welcome">
+    <div id="sheet-image" class="sheet-image">
+        <img src="<?= IMAGE_PATH . '/welcome.jpg' ?>" alt="welcome"/>
+    </div>
+
+    <div class="sheet-title"><h1>Bienvenue</h1></div>
+    <section>
+        <h2>Bienvenu sur votre site <?= htmlentities( $SETTINGS->findByName('long-name')->getValue() ) ?></h2>
+        <p>Utiliser l'interface administrateur pour creer vos articles et gerer votre site.</p>
+    </section>
+</div>

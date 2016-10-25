@@ -1,0 +1,15 @@
+<tr>
+    <td>
+        <?= htmlentities( $report->getSheet()->getTitle() ) ?>
+        <div class="list-table-actions">
+            <span class="edit">
+                <a  href="report-edit_id_<?= htmlentities( $report->getId() ) ?>">Modifier</a> |
+            </span>
+            <span class="supp">
+                <button id="supp_id_<?= htmlentities( $report->getId() ) ?>" type="text" >Supprimer</button>
+            </span>
+        </div>
+    </td>
+    <td><?= htmlentities( $report->getTitle() ) ?></td>
+    <td><?= sql_2_date( htmlentities( $report->getDate() ) ) ?></td>
+</tr>

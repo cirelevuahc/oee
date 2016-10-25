@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" class="" id="ec_icon_hamburger_multiply" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+y="0px" width="1px" height="1px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+    <g id="active_hover">
+        <polygon points="242.549,47.391 47.392,242.548 13.451,208.607 208.607,13.45 242.549,47.391"/>
+        <polygon points="47.392,13.452 242.551,208.609 208.609,242.551 13.451,47.393 47.392,13.452"/>
+    </g>
+    <g id="active">
+        <g id="a1">
+            <polygon points="13,48 243,48 243,88 13,88 13,48"/>
+            <polygon points="13,108 243,108 243,148 13,148 13,108"/>
+            <polygon points="13,168 243,168 243,208 13,208 13,168"/>
+        </g>
+        <g id="a2">
+            <polygon points="13,73 243,73 243,113 13,113 13,73"/>
+            <polygon points="13,143 243,143 243,183 13,183 13,143"/>
+        </g>
+        <g id="a3">
+        <polygon points="13,108 243,108 243,148 13,148 13,108"/>
+        </g>
+        <g id="a4">
+            <polygon points="226.596,190.49 14.094,102.467 29.402,65.51 241.904,153.533 226.596,190.49"/>
+            <polygon points="241.905,102.466 29.403,190.489 14.094,153.533 226.597,65.509 241.905,102.466"/>
+        </g>
+        <g id="a5">
+            <polygon points="223.457,60.827 60.827,223.457 32.543,195.174 195.174,32.542 223.457,60.827"/>
+            <polygon points="60.826,32.542 223.458,195.174 195.174,223.458 32.542,60.826 60.826,32.542"/>
+        </g>
+    </g>
+    <g id="normal_hover">
+        <polygon points="13,28 243,28 243,68 13,68 13,28"/>
+        <polygon points="13,108 243,108 243,148 13,148 13,108"/>
+        <polygon points="13,188 243,188 243,228 13,228 13,188"/>
+    </g>
+    <g id="normal">
+        <polygon points="13,48 243,48 243,88 13,88 13,48"/>
+        <polygon points="13,108 243,108 243,148 13,148 13,108"/>
+        <polygon points="13,168 243,168 243,208 13,208 13,168"/>
+    </g>
+</svg>

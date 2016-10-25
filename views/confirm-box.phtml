@@ -1,0 +1,16 @@
+<div id="confirm" class="popup">
+    <div class="popup-window">
+        <div class="popup-window-header">
+            <div class="popup-window-header-title"><?= $confirm_title ?></div>
+            <div id="confirm_button_close" class="popup-window-header-button">X</div>
+        </div>
+        <div class="popup-window-body">
+            <form method="POST">
+                <input id="confirm_id" type="hidden" name="id" value="">
+                <p><?= $confirm_msg ?></p>
+                <button class="popup-window-body-button" type="submit" name="action" value="supp">Oui</button>
+                <button class="popup-window-body-button" type="text">Non</button>
+            </form>
+        </div>
+    </div>
+</div>

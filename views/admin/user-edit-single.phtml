@@ -1,0 +1,31 @@
+<h1>Edition  utilisateur</h1>
+<form method="POST" class="edit" enctype="multipart/form-data">
+    <input type="hidden" id="id" name="id" value="<?= htmlentities( $id ) ?>">
+    <p>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Nom*" value="<?= htmlentities( $name ) ?>">
+    </p>
+    <p>
+        <label for="forname">Prénom</label>
+        <input type="text" id="forname" name="forname" placeholder="Prénom*" value="<?= htmlentities( $forname ) ?>">
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email*" value="<?= htmlentities( $email ) ?>">
+    </p>
+    <p>
+        <label for="login">Login</label>
+        <input type="text" id="login" name="login" placeholder="Login*" value="<?= htmlentities( $login ) ?>">
+    </p>
+    <p>
+        <?php require('apps/admin/user-edit-password.php'); ?>
+    </p>
+    <p>
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo*" value="<?= htmlentities( $pseudo ) ?>">
+    </p>
+
+    <div class="edit-button">
+        <button type="submit" class="button button-normal" name="action" value="<?= $user_action ?>">Sauvegarder</button>
+    </div>
+</form>

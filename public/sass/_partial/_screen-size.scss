@@ -1,0 +1,9 @@
+$breakpoint-md : 768px;
+$breakpoint-lg : 1200px;
+
+$media-lt : max-width $breakpoint-md;
+$media-md : $breakpoint-md $breakpoint-lg;
+$media-lg : $breakpoint-lg;
+
+$media-lt-md : max-width $breakpoint-lg;
+$media-md-lg : $breakpoint-md;

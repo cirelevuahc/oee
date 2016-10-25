@@ -1,0 +1,36 @@
+<div class="register">
+    <div id="sheet-image" class="sheet-image">
+        <img src="<?= IMAGE_PATH . '/login.jpg' ?>" alt="login"/>
+    </div>
+
+    <div class="sheet-title"><h1>Je m'inscris</h1></div>
+    <section>
+        <h2>Je créer mon compte</h2>
+        <form method="POST" class="register-form" enctype="multipart/form-data">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Nom*" value="<?= htmlentities( $name ) ?>">
+
+            <label for="forname">Prénom</label>
+            <input type="text" id="forname" name="forname" placeholder="Prénom*" value="<?= htmlentities( $forname ) ?>">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email*" value="<?= htmlentities( $email ) ?>">
+
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login" placeholder="Login*" value="<?= htmlentities( $login ) ?>">
+
+            <label for="password">Mot de passe</label>
+            <input type="text" id="password" name="password" placeholder="Mot de passe*" value="<?= htmlentities( $password ) ?>">
+
+            <label for="confirme_password">Confirmer le mot de passe</label>
+            <input type="text" id="confirme_password" name="confirme_password" placeholder="Confirmer le mot de passe*" value="<?= htmlentities( $confirme_password ) ?>">
+
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo*" value="<?= htmlentities( $pseudo ) ?>">
+
+            <div class="register-form-button">
+                <button type="submit" class="button button-normal" name="action" value="register">M'enregistrer</button>
+            </div>
+        </form>
+    </section>
+</div>

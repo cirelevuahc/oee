@@ -1,0 +1,152 @@
+/**
+ * admin/_menu.scss
+ */
+
+
+.header-menu {
+
+  display: block;
+
+  ul {
+    font-size: 0;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      font-size: 1rem;
+      position: relative;
+      color: $menu_text_color;
+
+      a {
+        display: block;
+        color: $menu_text_color;
+        padding: 10px 10px;
+      }
+    }
+  }
+
+  li {
+    background-color: $menu_background_color;
+
+    a:hover {
+      color: $menu_text_color_hover;
+      background-color: $menu_background_color_hover;
+    }
+
+    &:hover > ul {
+      display: block;
+    }
+  }
+
+  ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid $menu_border_color;
+    background-color: $menu_submenu_background_color;
+    white-space: nowrap;
+
+    li {
+      display: block;
+      text-align: left;
+
+      a {
+        padding-left: 10px;
+
+      }
+
+    }
+
+    ul {
+      left: 100%;
+      top: 0px;
+    }
+  }
+
+
+}
+
+
+.side-menu {
+
+  display: block;
+
+  ul {
+    font-size: 0;
+    text-align: left;
+
+    li {
+
+      font-size: 1rem;
+      position: relative;
+
+      a {
+        display: block;
+        color: $menu_text_color;
+        padding: 10px 10px;
+      }
+
+      .side-menu-sub-menu_display {
+        display: block;
+      }
+
+      .side-menu-sub-menu_select {
+        color: $menu_text_color_hover;
+      }
+    }
+  }
+
+  li {
+    background-color: $menu_background_color;
+
+    a:hover {
+      color: $menu_text_color_hover;
+      background-color: $menu_background_color_hover;
+
+      &:after {
+        content: " ";
+        border: 10px solid rgba(0, 0, 0, 0);
+        border-right-color: $menu_text_color_hover;
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    .side-menu_select {
+      color: $menu_background_color_hover;
+      background-color: $menu_text_color_hover;
+
+      &:after {
+        content: " ";
+        border: 10px solid rgba(0, 0, 0, 0);
+        border-right-color: $menu_submenu_background_color;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  ul ul {
+    display: none;
+
+    li {
+      display: block;
+      text-align: left;
+
+      a {
+        //padding-left: 30px;
+        background-color: $menu_background_color_hover;
+        font-size: .8rem;
+      }
+
+    }
+
+    ul {
+      left: 100%;
+      top: 0px;
+    }
+  }
+
+}

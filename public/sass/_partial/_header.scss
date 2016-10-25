@@ -1,0 +1,34 @@
+/**
+ * _header.scss
+ */
+
+@import 'menu';
+
+.header_fluid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.header {
+    @include container;
+
+    position: relative;
+    margin: 0 auto;
+
+    > a {
+        position: absolute;
+        width: 19%;
+        display: inline-block;
+
+        img {
+            height: 190px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+}

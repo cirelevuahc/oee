@@ -1,0 +1,20 @@
+
+<h1>Gestion des articles
+    <a class="button button-normal" href="article-edit_id_0">Nouvel article</a>
+</h1>
+
+<table class="list-table">
+    <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Titre</th>
+            <th>Gallerie</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <?php require('apps/admin/article.php'); ?>
+    </tbody>
+</table>
+<?php require('apps/confirm-box.php'); ?>

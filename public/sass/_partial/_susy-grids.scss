@@ -1,0 +1,38 @@
+$screen-size : 1200px; //1560px;
+
+$susy: (
+  flow: ltr, // ltr | rtl
+  math: fluid, // fluid | static ( requires column-width)
+  output: float, // float | isolate
+  gutter-position: after, // before | after | split | inside-static
+  container: $screen-size, // lenght or % | auto
+  container-position: center, // left | center | right | <lenght> [*2] (grid ) ...
+  columns: 8,
+  gutters: 1,
+  column-width: false,
+  global-box-sizing: border-box, // content-box | border-box | padding-box ( affect inside) ..
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background, // background | overlay
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+@mixin cf {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@include border-box-sizing;

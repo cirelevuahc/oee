@@ -1,0 +1,139 @@
+/**
+ * _menu.scss
+ */
+.header-small-menu {
+  @include cf;
+
+  cursor: pointer;
+  width: 100%;
+  height: $smallMenuHeight;
+  padding-right: 2%;
+
+  //background-color: $menu_background_color;
+
+  .small-menu-icon {
+    float: right;
+    width: $smallMenuHeight;
+    height: $smallMenuHeight;
+  }
+
+  @include breakpoint( $media-md-lg ) {
+    display: none;
+  }
+}
+
+
+.header-menu {
+  @include container;
+
+  width: 100%;
+  display: none;
+
+  @include breakpoint( $media-md-lg ) {
+    //display: block;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  ul {
+    font-size: 0;
+    text-align: left;
+
+    @include breakpoint( $media-md-lg ) {
+      text-align: right;
+    }
+
+    li {
+      @include breakpoint( $media-md-lg ) {
+        display: inline-block;
+      }
+
+      font-size: 2rem;
+      position: relative;
+
+      a {
+        display: block;
+        color: $menu_text_color;
+        padding: 10px 10px;
+      }
+    }
+  }
+
+  li {
+    background-color: $menu_background_color;
+
+    @include breakpoint( $media-md-lg ) {
+      background-color: transparent;
+    }
+
+    a:hover, .header-menu_selected {
+      color: $menu_text_color_hover;
+      background-color: $menu_background_color_hover;
+      border-bottom: 1px solid $menu_border_color;
+
+      @include breakpoint( $media-md-lg ) {
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .sub-menu-icon {
+        fill : $menu_text_color_hover !important;
+      }
+    }
+
+    &:hover > ul {
+      display: block;
+    }
+  }
+
+  ul ul {
+    @include breakpoint( $media-md-lg ) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0px;
+      border-radius: 0px 0px 5px 5px;
+      border: 1px solid $menu_border_color;
+      //background-color: $menu_submenu_background_color;
+      white-space: nowrap;
+    }
+
+    li {
+      display: block;
+      text-align: left;
+
+      a {
+        padding-left: 30px;
+        color: $menu_submenu_color;
+        background-color: $menu_submenu_background_color;
+
+        @include breakpoint( $media-md-lg ) {
+          padding-left: 10px;
+        }
+
+        &:hover, &.header-sub-menu_selected{
+          color: $menu_submenu_color_hover;
+          background-color: $menu_submenu_background_color_hover;
+        }
+      }
+
+      @include breakpoint( $media-md-lg ) {
+        &:last-child a, &:last-child a:hover {
+          border-radius: 0px 0px 5px 5px;
+        }
+      }
+    }
+
+    ul {
+      left: 100%;
+      top: 0px;
+    }
+  }
+
+  .menu-has-children > a > span {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+  }
+
+}
