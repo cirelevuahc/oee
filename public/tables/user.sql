@@ -41,13 +41,6 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Contenu de la table `user`
---
-
-INSERT INTO `user` (`id`, `id_role`, `name`, `forname`, `email`, `login`, `password`, `pseudo`, `date`, `status`, `register_confirm`) VALUES
-(1, 1, 'Chauvel', 'Eric', 'eric.chauvel@neuf.fr', 'eric', '$2y$08$UQ449SUoS13P6J864lgMEeVWE2PcIYE3rudOi4P1WmvAhUdD72wl.', 'cirelevuahc', '2016-06-25 12:02:35', 1, 'E');
-
---
 -- Index pour les tables exportées
 --
 
